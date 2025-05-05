@@ -29,12 +29,12 @@ $$
 
 Where:
 
-- \( s \) is the sign bit (0 for positive, 1 for negative)
+- $s$ is the sign bit (0 for positive, 1 for negative)
 - *fraction* is the mantissa bits interpreted as a binary fraction
-- \( e \) is the exponent field (unsigned integer)
+- $ e $ is the exponent field (unsigned integer)
 - *bias* is a format-specific constant to allow negative exponents
 
-> For example, in `float32`, the exponent bias is 127. If the exponent bits store the value 130, the actual exponent is \( 130 - 127 = 3 \). This allows the format to represent both very large and very small values symmetrically around zero.
+> For example, in `float32`, the exponent bias is 127. If the exponent bits store the value 130, the actual exponent is $ 130 - 127 = 3 $. This allows the format to represent both very large and very small values symmetrically around zero.
 
 ---
 
